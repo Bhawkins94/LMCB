@@ -1,0 +1,166 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: candara;
+}
+
+body {
+	min-width:40em;
+	background: url("snowtiles.jpg");
+	background-attachment: fixed;
+}
+
+main {
+	background: white;
+	margin: auto;
+	width: 90%;
+}
+
+header {
+	display: flex;
+	background: green;
+	/*height: 8em;*/
+}
+
+header > div {
+	background: teal;
+	width: 80%;
+}
+
+header > div.imgcontainer{
+	margin: auto;
+	width: 20%;
+	/*max-width: 10em;*/
+	/*float: left;*/
+	/*width: 20%;*/
+	/*height: 100%;*/
+}
+
+div.imgcontainer img {
+	/*max-width: 10em;*/
+	display: block;
+	width: 100%;
+	margin: auto;
+}
+
+nav {
+	/*width: 100%;*/
+	/*float: right;*/
+	/*height: 5em;*/
+	/*background: blue;*/
+}
+
+nav#links{
+	display: flex;
+	justify-content: space-between;
+	font-size: 2em;
+	/*height: 40%;*/
+}
+
+div#social{
+	/*float: right;*/
+}
+
+nav#menu {
+	height: 5em;
+}
+
+nav#menu > ul > li.bannerimg {
+	height: 100%;
+	width: 4%;
+}
+
+
+nav#menu > ul > li > img {
+	height: 100%;
+	width: 100%;
+}
+
+nav#menu > ul{
+	display: flex;
+	height: 100%;
+	background: yellow;
+}
+
+nav ul > li.submenu , li.button {
+	/*float: left;*/
+	/*padding-top: 0.5em;*/
+	height: 100%;
+	font-size: 1.3em;
+	width: 23%;
+	background-image: url("Banner_Middle.png");
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+nav ul > li > p{
+	height: 100%;
+	margin-top: 1em;
+	margin-bottom: -1em;
+	/*background: red;*/
+}
+
+	
+header li ul{
+	/*top: auto;*/
+	display: none;
+}
+
+header li li.scrollimg{
+	height: 1.5em;
+	width: 100%;
+	display: none;
+}
+
+header li.scrollimg img{
+	height: 100%;
+	width: 100%;
+}
+
+
+header li li:not(.scrollimg){
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 0.8em;
+	/*height: 3.5em;*/
+	display: none;
+	width: 75%;
+	background: url("Scroll_Middle.png");
+	background-size: 100% 100%;
+}
+
+header nav > ul > li:hover.submenu,
+header nav > ul > li.hover.submenu{
+	background: url("Banner_Middle_Hover.png");
+	background-size: 100% 100%;
+}
+
+header li:hover ul,
+header li.hover ul{
+	display: block;
+}
+
+header li:hover li:not(.scrollimg),
+header li.hover li:not(.scrollimg){
+	display: block;
+	padding-left: 20%;
+	padding-right: 5%;
+}
+
+header li:hover li:hover:not(.scrollimg){
+	filter: brightness(80%) hue-rotate(-180deg) saturate(500%);
+}
+
+header li:hover li.scrollimg,
+header li.hover li.scrollimg{
+	display: block;
+}
+
+ul {
+	list-style-type: none;
+}
+
+section {
+	clear: both;
+	background: pink;
+}
