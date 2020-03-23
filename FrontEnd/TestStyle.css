@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: candara;
+}
+
+.social {
+	color: white;
+	font-size: 1.5em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+body {
+	min-width:40em;
+}
+
+main {
+	background: white;
+	margin: auto;
+	width: 95%;
+	max-width: 70em;
+	margin-top: 5em;
+}
+
+header.static {
+	height: 5em;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	background: skyblue;
+	display: flex;
+	justify-content: space-between;
+	z-index: 3;
+}
+
+header.static img {
+	height: 100%;
+}
+
+ul#social {
+	display: flex;
+}
+
+nav#menu {
+	width: 100%;
+	height: 5em;
+}
+
+nav#menu > ul{
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+}
+
+nav#menu ul > li.submenu , li.button {
+	/*float: left;*/
+	/*padding-top: 0.5em;*/
+	height: 100%;
+	font-size: 1.3em;
+	width: 23%;
+	height: 100%;
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+nav#menu ul > li > p{
+	height: 100%;
+	margin: auto;
+	line-height: 4em;
+}
+
+	
+nav#menu li ul{
+	/*top: auto;*/
+	display: none;
+}
+
+nav#menu li li{
+	background: white;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 0.8em;
+	/*height: 3.5em;*/
+	display: none;
+}
+
+nav#menu > ul > li:hover.submenu,
+nav#menu > ul > li.hover.submenu{
+	background: white;
+	z-index: 2;
+}
+
+nav#menu li:hover ul,
+nav#menu li.hover ul{
+	display: block;
+}
+
+nav#menu li:hover li:not(.scrollimg),
+nav#menu li.hover li:not(.scrollimg){
+	display: block;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+nav#menu li:hover li.scrollimg,
+nav#menu li.hover li.scrollimg{
+	display: block;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
