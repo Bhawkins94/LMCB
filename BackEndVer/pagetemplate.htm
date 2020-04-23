@@ -8,17 +8,20 @@
 		<!--Date: 03/24/2020-->
 		
 		<meta charset="UTF-8">
-		
+	
 		<title>
-			Our Team - Lower Mainland Christmas Bureau
+			Lower Mainland Christmas Bureau
 		</title>
 
 		<link rel="stylesheet" href="TestStyle.css" type="text/css">
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="jsTemplate.js"></script>
+		
+		{{CUSTOM STYLE}}
+		
 	</head>
-	<body>
+	<body onresize="menuResize()">
 		<header class="static">
 			<div class="imgcontainer">
 				<a href="TestHome.htm">
@@ -38,9 +41,9 @@
 					<li class="submenu"><p>Ways to Support</p>
 						<ul>
 							<li><a href="financialDonation.htm">Make a Financial Donation</a></li>
-              <li><a href="will.htm">Leave a Gift in Your Will</a></li>
+							<li><a href="will.htm">Leave a Gift in Your Will</a></li>
 							<li><a href="toyDonation.htm">Donate Toys and Gifts</a></li>
-              <li><a href="toyDrive.htm">Organize Toy Drive</a></li>
+							<li><a href="toyDrive.htm">Organize Toy Drive</a></li>
 							<li><a href="volunteer.htm">Volunteer Your Time</a></li>
 							<li>Become a Sponsor</li>
 						</ul>
@@ -64,32 +67,7 @@
 		</header>
 
 		<main>
-			<section>
-				<br/><br/>
-				<h1>It's not about the size of the crew, but how much they do!</h1>
-				<br/>
-
-				<h2>Chris Bayliss: Executive Director</h2>
-				<p>
-					Chris has been involved with the LMCB in a number of capacities since 1990 and has served as Executive Director since 1999.
-				</p>
-				<br/>
-				<p>
-					His community work includes over 30 years volunteering in the Renfrew Heights community most notably with the Trojan Football Club. He also volunteers with the British Columbia Coalition of Motorcyclists, helping to promote motorcycle safety and awareness.
-				</p>
-				<br/>
-
-				<h2>Sim Lee: Community Outreach and Operations Manager</h2>
-				<p>
-					Bio coming soon...
-				</p>
-				<br/>
-
-				<h2>Amy Valagao: Warehouse Supervisor</h2>
-				<p>
-					Amy brings her infectious charisma to the LMCB and has been the mastermind of our eccentric warehouse since Fall 2014. Her eye for detail keeps our warehousing and product donations organized. She is passionate about the work that we do and returns every season because she loves being a part of a team that creates meaningful Christmas experiences for families in need.
-				</p>
-			</section>
+			{{CONTENT}}
 		</main>
 	</body>
 </html>
