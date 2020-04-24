@@ -52,6 +52,14 @@ header.static {
 	z-index: 3;
 }
 
+p.sansserif{
+	font-family: sans-serif;
+}
+
+li.sansserif{
+	font-family: sans-serif;
+}
+
 header.static img {
 	height: 100%;
 }
