@@ -9,4 +9,4 @@ function menuResize(){
 	return;
 }
 
-document.onload = menuResize;
+window.onload = menuResize;
