@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		
+		<!--Authors: Brandon Hawkins, Michael Casteel, Hailey Hanson, Violet Johnson, Matthew Foltz-->
+		<!--Project 1- Lower Mainland Christmas Bureau-->
+		<!--Date: 03/24/2020-->
+		
+		<meta charset="UTF-8">
+	
+		<title>
+			Lower Mainland Christmas Bureau
+		</title>
+
+		<link rel="stylesheet" href="TestStyle.css" type="text/css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="jsTemplate.js"></script>
+		
+		{{CUSTOM STYLE}}
+		
+	</head>
+	<body onresize="menuResize()">
+		<header class="static">
+			<div class="imgcontainer">
+				<a href="TestHome.htm">
+					<img src="LMCB-logo3.jpg" alt="Lower Mainland Christmas Bureau Logo" title="Return to Home">
+				</a>
+			</div>
+			<nav id="menu">
+				<ul>
+					<li class="submenu"><p>About Us</p>
+						<ul>
+							<li><a href="history.htm">Mission and History</a></li>
+							<li><a href="team.htm">Our Team</a></li>
+							<li><a href="directors.htm">Board of Directors</a></li>
+							<li><a href="sponsors.htm">Our Sponsors</a></li>
+						</ul>
+					</li>
+					<li class="submenu"><p>Ways to Support</p>
+						<ul>
+							<li><a href="financialDonation.htm">Make a Financial Donation</a></li>
+							<li><a href="will.htm">Leave a Gift in Your Will</a></li>
+							<li><a href="toyDonation.htm">Donate Toys and Gifts</a></li>
+							<li><a href="toyDrive.htm">Organize Toy Drive</a></li>
+							<li><a href="volunteer.htm">Volunteer Your Time</a></li>
+							<li>Become a Sponsor</li>
+						</ul>
+					</li>
+					<li class="submenu"><p>What's Happening</p>
+						<ul>
+							<li><a href="updates.htm">News and Updates</a></li>
+							<li><a href="events.htm">Programs and Events</a></li>
+						</ul>
+					</li>
+					<li class="button"><p><a href="contact.htm">Contact Us</a></p></li>
+					<li class="button"><p><a href="donate.htm">Donate Now</a></p></li>
+				</ul>
+			</nav>
+			<ul id="social">
+				<li><a href="https://twitter.com/LMCBureau" class="social" target="_blank"> <i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://www.facebook.com/LMCBureau/" class="social" target="_blank"> <i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://www.instagram.com/lmcbureau/" class="social" target="_blank"> <i class="fa fa-instagram"></i></a></li>
+				<li><a href="https://www.linkedin.com/company/lowermainlandchristmasbureau" class="social" target="_blank"> <i class="fa fa-linkedin"></i></a></li>
+			</ul>
+		</header>
+
+		<main>
+			{{CONTENT}}
+		</main>
+	</body>
+</html>
